@@ -1,0 +1,31 @@
+# Build files
+build/
+sdkconfig
+sdkconfig.old
+
+# Cache
+.cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Object files
+*.o
+*.s
+*.obj
+
+# macOS
+.DS_Store
+
+# Editor
+*.orig
+*.swp
+*~
+
+# Dependencies (managed by ESP-IDF component manager)
+managed_components/
+dependencies.lock
+
+# Logs
+*.log
