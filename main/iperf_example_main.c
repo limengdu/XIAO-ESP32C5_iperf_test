@@ -9,12 +9,24 @@
 
 #include <errno.h>
 #include <string.h>
+#include <stdbool.h>
 #include "esp_wifi.h"
 #include "esp_log.h"
 #include "esp_err.h"
 #include "nvs_flash.h"
 #include "esp_console.h"
 #include "cmd_system.h"
+
+/*
+ * Stub function for esp_wifi_enable_easy_fragment
+ * This function is not supported on ESP32-C5 but is referenced by wifi-cmd component.
+ * Providing a stub to fix linker error.
+ */
+void esp_wifi_enable_easy_fragment(bool enable)
+{
+    ESP_LOGW("WIFI", "wifi_frag is not supported on ESP32-C5");
+    (void)enable;
+}
 
 /* component manager */
 #include "iperf.h"
