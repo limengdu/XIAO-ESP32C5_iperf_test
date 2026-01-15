@@ -134,7 +134,7 @@ iperf -s -u -i 1
 
 **ESP32 终端：**
 ```
-iperf -c <电脑的IP地址> -u -b 100M -i 1 -t 60
+iperf -c <电脑的IP地址> -u -b 100000000 -i 1 -t 60
 ```
 
 ---
